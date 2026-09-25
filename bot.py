@@ -328,8 +328,6 @@ async def casino_handler(message: types.Message):
         )
         new_balance = row["points"]
 
-    await asyncio.sleep(2.5)
-
     await message.reply(
         f"{result}\n"
         f"💼 Ваш баланс: <b>{new_balance:g}</b>",
